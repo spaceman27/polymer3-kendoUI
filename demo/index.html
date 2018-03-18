@@ -8,18 +8,24 @@
   <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js">
 
 </script>
-<link rel="stylesheet" href="http://kendo.cdn.telerik.com/2017.1.223/styles/kendo.common.min.css"/>
-    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2017.1.223/styles/kendo.rtl.min.css"/>
-    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2017.1.223/styles/kendo.silver.min.css"/>
+<link rel="stylesheet" href="../assets/kendo.common.min.css"/>
+    <link rel="stylesheet" href="../assets/kendo.rtl.min.css"/>
+    <link rel="stylesheet" href="../assets/kendo.silver.min.css"/>
 
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="http://kendo.cdn.telerik.com/2017.1.223/js/kendo.all.min.js"></script>
-    <script src="http://kendo.cdn.telerik.com/2016.3.1118/js/kendo.webcomponents.min.js"></script>  
+    <script src="../assets/jquery-1.12.4.min.js"></script>
+    <script src="../assets/kendo.all.min.js"></script>
+    <script src="../assets/kendo.webcomponents.min.js"></script>  
 
   <!-- Import the polymer3-element element's module. -->
   <script type="module" src="../polymer3-element.js"></script>
 
-  <script>	
+  
+</head>    
+<body>
+  <kendo-scheduler id="scheduler"></kendo-scheduler>
+  <polymer3-element></polymer3-element>
+</body>
+<script>	
       var scheduler = document.querySelector("kendo-scheduler");
       var dataSource = new kendo.data.SchedulerDataSource({
         data: [
@@ -34,10 +40,4 @@
 
       scheduler.setDataSource(dataSource);
     </script>
-</head>    
-<body>
-  <kendo-scheduler id="scheduler"></kendo-scheduler>
-  <polymer3-element></polymer3-element>
-</body>
-
 </html>
