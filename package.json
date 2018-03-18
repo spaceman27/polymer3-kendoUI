@@ -1,0 +1,15 @@
+{
+  "name": "polymer3-element",
+  "version": "0.0.1",
+  "main": "polymer3-element.js",
+  "author": "daong.js@gmail.com",
+  "license": "MIT",
+  "flat": true,
+  "dependencies": {
+    "@polymer/polymer": "next",
+    "@webcomponents/webcomponentsjs": "^1.0.10"
+  },
+  "scripts": {
+    "dev": "polymer serve --npm -o"
+  }
+}
