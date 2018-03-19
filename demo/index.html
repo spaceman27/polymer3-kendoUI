@@ -2,43 +2,28 @@
 <html>
 
 <head>
-  <title>
-    polymer3-element Demo Page</title>
-  <!-- Load polyfills. Same as 2.x, except for the path -->
-  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js">
+    <title>
+        polymer3-element Demo Page</title>
 
-</script>
-<link rel="stylesheet" href="../assets/kendo.common.min.css"/>
-    <link rel="stylesheet" href="../assets/kendo.rtl.min.css"/>
-    <link rel="stylesheet" href="../assets/kendo.silver.min.css"/>
+
+    <!-- Load polyfills. Same as 2.x, except for the path -->
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js">
+    </script>
 
     <script src="../assets/jquery-1.12.4.min.js"></script>
     <script src="../assets/kendo.all.min.js"></script>
-    <script src="../assets/kendo.webcomponents.min.js"></script>  
+    <script src="../assets/kendo.webcomponents.min.js"></script>
+    <!-- Import the polymer3-element element's module. -->
+    <script type="module" src="../polymer3-element.js"></script>
+    <script type="module" src="../name-tag-element.js"></script>
 
-  <!-- Import the polymer3-element element's module. -->
-  <script type="module" src="../polymer3-element.js"></script>
 
-  
-</head>    
+</head>
+
 <body>
-  DEMO POLYMER 3 with KENDO SCHEDULE CONTROL
-  <kendo-scheduler id="scheduler"></kendo-scheduler>
-  <polymer3-element></polymer3-element>
-</body>
-<script>	
-      var scheduler = document.querySelector("kendo-scheduler");
-      var dataSource = new kendo.data.SchedulerDataSource({
-        data: [
-          {
-            id: 1,
-            start: new Date("2017/3/20 08:00 AM"),
-            end: new Date("2017/3/20 09:00 AM"),
-            title: "MEETING"
-          }
-        ]
-      });
+    DEMO POLYMER 3 with KENDO SCHEDULE CONTROL
 
-      scheduler.setDataSource(dataSource);
-    </script>
+    <polymer3-element name="daad"></polymer3-element>
+</body>
+
 </html>
